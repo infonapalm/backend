@@ -1,3 +1,5 @@
+# Instruction for developers what to change on bottom
+
 # Finatra Hello World Example Application
 
 * A simple "hello world" example.
@@ -36,3 +38,17 @@ $ java -jar -Dlog.service.output=hello-world.log -Dlog.access.output=access.log 
 ```
 mvn clean install
 ```
+
+
+
+
+
+
+
+
+###Infonapalm###
+
+To use please set:
+GoogleVisualActor -> line 66 -> key={{GoogleVisualAPIToken}}
+
+Const -> ACCESS_TOKEN : ACCESS_TOKEN_11 (you could use less numbers) -> tokens for VK API
