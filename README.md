@@ -52,3 +52,13 @@ To use please set:
 GoogleVisualActor -> line 66 -> key={{GoogleVisualAPIToken}}
 
 Const -> ACCESS_TOKEN : ACCESS_TOKEN_11 (you could use less numbers) -> tokens for VK API
+
+###Crontab###
+0 22 * * *	/usr/bin/curl http://localhost:8889/cron/updateRussians
+0 */1 * * *	/usr/bin/curl http://localhost:8889/cron/polygon/update
+30 */2 * * *	/usr/bin/curl http://localhost:8889/cron/updateUsersWithTags
+0 */1 * * *	/usr/bin/curl http://localhost:8889/cron/updateDateStringInPhotos
+0 */2 * * *	/usr/bin/curl http://localhost:8889/cron/updatePotential
+35 */2 * * *	/usr/bin/curl http://localhost:8889/cron/potentialWithPhotosInPolygon
+0 0 * * *	/usr/bin/curl http://localhost:8888/google/visual/maybe
+30 */1 * * *	/usr/bin/curl http://localhost:8888/cron/updatePolygonDates
